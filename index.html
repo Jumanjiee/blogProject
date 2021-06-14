@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>business in focus</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" href="css/jquery.desoslide.css">
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<link href="css/fontawesome-all.css" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800"
+	rel="stylesheet">
+</head>
+
+<body>
+
+
+    <!--Header-->
+<header>
+    <div class="top-bar_sub_w3layouts container-fluid">
+        <div class="row">
+            <div class="col-md-4 logo text-left">
+                <a class="navbar-brand" href="index.html">
+                    <i class="fab fa-linode"></i> business in focus </a>
+            </div>
+            <div class="col-md-4 top-forms text-center mt-lg-3 mt-md-1 mt-0">
+                <span>Welcome Back!</span><div id="result"></div>
+				
+                <span class="mx-lg-4 mx-md-2  mx-1" id="myDIV1">
+                    <a href="login.html">
+                        <i class="fas fa-lock"></i> <strong>Sign In</strong></a>
+                </span>
+                <span id="myDIV2">
+                    <a href="index.html">
+                        <i class="far fa-user"></i> <strong>Register</strong></a>
+                </span>
+				<span id="myDIV3" style="none">
+                    <a href="index.html"  onclick="delLocalStorage()">
+                        <i class="far fa-user"></i> <strong>Logout</strong></a>
+                </span>
+            </div>
+            <div class="col-md-4 log-icons text-right">
+
+                <ul class="social_list1 mt-3">
+
+                    <li>
+                        <a href="" class="facebook1 mx-2" >
+                            <i class="fab fa-facebook-f"></i>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="twitter2">
+                            <i class="fab fa-twitter"></i>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="dribble3 mx-2">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="pin">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+        <div class="header_top" id="home">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler navbar-toggler-right mx-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+               </button>
+
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                       
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+                        <form action="" method="post" class="form-inline my-2 my-lg-0 header-search" name="form">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search here..." required="yes" type="text" name="search[keyword]">
+                            <button class="btn btn1 my-2 my-sm-0" type="submit" name="submit"><i class="fas fa-search"></i></button>
+                        </form>
+    
+                    
+
+                </div>
+            </nav>
+
+        </div>
+</header>
+<!--//header-->
+
+	
+	<!--/banner-->
+	<div class="banner">
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+			</ol>
+			<div class="carousel-inner" role="listbox">
+				<div class="carousel-item active">
+					<div class="carousel-caption">
+						<h3>
+						Here to help your business ideas grow.
+						</h3>
+					</div>
+				</div>
+				<div class="carousel-item item2">
+					<div class="carousel-caption">
+						<h3>
+                            Supporting your business
+						</h3>
+					</div>
+				</div>
+				<div class="carousel-item item3">
+					<div class="carousel-caption">
+						<h3>
+							Increase your workplace productivity
+						</h3>
+					</div>
+				</div>
+				<div class="carousel-item item4">
+					<div class="carousel-caption">
+						<h3>
+                            Say hello to your next perfect property
+						</h3>
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+	<!--/model-->
+	<!--//banner-->
+
+
+	
+	<!--/main-->
+	<section class="main-content-w3layouts-agileits">
+		<div class="container">
+			<div class="row">
+				<!--left-->
+				<div class="col-lg-8 left-blog-info-w3layouts-agileits text-left">
+					<!--grid blogs below-->
+                    <h1><strong>Site Blogs</strong></h1>
+					<div class="blog-girds-sec">
+						<div class="blog_info_left_grid">
+						
+							<a>
+								<img src="images/b1.jpg" class="img-fluid" alt="">
+							</a>
+						</div>
+						<h3>
+							Be productive with your time
+						</h3>
+						<h4>
+							published on : 1-June-2021
+						</h4>
+						<p>Startup founders are notoriously busy and short on time. Seriously, there’s always something to work on.
+
+							When you only have a short amount of time, it becomes imperative to be productive with each minute that you have.
+							
+							Make sure that you’re choosing tasks that fit the amount of time that you have and that you make use of every minute.
+							
+							Got off a call early and have five minutes to spare? Clean out your email inbox by getting rid of spam emails or responding to messages that require short answers.
+							
+							When you find yourself with time to spare, don’t waste it on social media, YouTube videos, or surfing the Internet.</p>
+				    </div>
+					<div class="blog-girds-sec">
+						<div class="blog_info_left_grid">
+						
+							<a>
+								<img src="images/b2.jpg" class="img-fluid" alt="">
+							</a>
+						</div>
+						<h3>
+							Choose your leisure activities
+						</h3>
+						<h4>
+							published on : 6-June-2021
+						</h4>
+						<p>Staying focused is all about choosing your leisure activities. Startup founders and entrepreneurs don’t waste their time on mindless distractions.
+
+							That means no TV. Sixty-seven percent of wealthy people watch one hour or less of TV a day. Skip the latest reality show and use your downtime for more beneficial activities.</p>
+				    </div>
+
+					<div class="blog-girds-sec">
+						<div class="blog_info_left_grid">
+						
+							<a>
+								<img src="images/b3.jpg" class="img-fluid" alt="">
+							</a>
+						</div>
+						<h3>
+							Streamline tasks
+						</h3>
+						<h4>
+							published on : 5-June-2021
+						</h4>
+						<p>Streamlining tasks helps you focus on your startup by not wasting time. A streamlined task is one that’s done in the easiest possible way.
+
+							You can easily optimize each task if you focus on the simplest route from Point A to Point B. You might look into management tools such as Trello and Slack to keep you on track.
+							
+							You can also streamline your daily to-dos by making sure you’re working on similar tasks at the same time. Need to write a newsletter and a blog post? Do them one right after the other so that you don’t have to switch hats and your thinking style.</p>
+				    </div>
+
+			
+
+
+			
+				</div>
+				<!--//left-->
+				<!--right-->
+				<aside class="col-lg-4 agileits-w3ls-right-blog-con text-right">
+					<div class="right-blog-info text-left">
+					
+						<ul class="list-group single">
+						
+						</ul>
+						<div class="tech-btm widget_social">
+							<h4>Stay Connected</h4>
+							<ul>
+
+								<li>
+									<a class="twitter" href="">
+										<i class="fab fa-twitter"></i>
+										<span class="count"></span> Twitter</a>
+									</li>
+									<li>
+										<a class="facebook" href="">
+											<i class="fab fa-facebook-f"></i>
+											<span class="count"></span> Facebook</a>
+										</li>
+										
+
+											</ul>
+										</div>
+										
+									</div>
+								</aside>
+								<!--//right-->
+							</div>
+						</div>
+					</section>
+					<!--//main-->
+					<!--/middle-->
+					<section class="middle-sec-agileinfo-w3ls">
+						<div class="container">
+							<div class="row inner-sec">
+								<div class="col-md-4 news-left">
+									<ul id="demo1_thumbs" class="list-inline">
+										<!--get latest four-->
+										
+									</ul>
+								</div>
+								<div id="demo1_main_image" class="col-md-8  news-right"></div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+
+					</section>
+
+				<!--footer-->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 footer-grid-agileits-w3ls text-left">
+					<h3>About US</h3>
+
+					<div class="read">
+						<a href="about.html" class="btn btn-primary read-m">Read More</a>
+					</div>
+				</div>
+			
+				<!-- subscribe -->
+				<div class="col-lg-4 subscribe-main footer-grid-agileits-w3ls text-left">
+					<h2>Signup to our newsletter</h2>
+					<div class="subscribe-main text-left">
+							<div class="subscribe-form">
+									<form action="#" method="post" class="subscribe_form">
+										<input class="form-control" type="email" placeholder="Enter your email..." required="">
+										<button type="submit" class="btn btn-primary submit">Submit</button>
+									</form>
+									<div class="clearfix"> </div>
+						   </div>
+						<p>Welcome to our site</p>
+					</div>
+					<!-- //subscribe -->
+				</div>
+			</div>
+			<!-- footer -->
+			<div class="footer-cpy text-center">
+				<div class="footer-social">
+					<div class="copyrighttop">
+						<ul>
+							<li class="mx-3">
+								<a class="facebook" href="">
+									<i class="fab fa-facebook-f"></i>
+									<span>Facebook</span>
+								</a>
+							</li>
+							<li>
+								<a class="facebook" href="">
+									<i class="fab fa-twitter"></i>
+									<span>Twitter</span>
+								</a>
+							</li>
+							<li class="mx-3">
+								<a class="facebook" href="">
+									<i class="fab fa-google-plus-g"></i>
+									<span>Google+</span>
+								</a>
+							</li>
+							<li>
+								<a class="facebook" href="">
+									<i class="fab fa-pinterest-p"></i>
+									<span>Pinterest</span>
+								</a>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+			
+			<!-- //footer -->
+		</div>
+	</footer>
+
+
+
+
+
+
+
+					<!---->
+					<!-- js -->
+					<script src="js/jquery-2.2.3.min.js"></script>
+					<!-- //js -->
+					<!-- desoslide-JavaScript -->
+					<script src="js/jquery.desoslide.js"></script>
+					<script>
+						$('#demo1_thumbs').desoSlide({
+							main: {
+								container: '#demo1_main_image',
+								cssClass: 'img-responsive'
+							},
+							effect: 'sideFade',
+							caption: true
+						});
+					</script>
+
+					<!-- requried-jsfiles-for owl -->
+					<script>
+						$(window).load(function () {
+							$("#flexiselDemo1").flexisel({
+								visibleItems: 3,
+								animationSpeed: 1000,
+								autoPlay: true,
+								autoPlaySpeed: 3000,
+								pauseOnHover: true,
+								enableResponsiveBreakpoints: true,
+								responsiveBreakpoints: {
+									portrait: {
+										changePoint: 480,
+										visibleItems: 1
+									},
+									landscape: {
+										changePoint: 640,
+										visibleItems: 2
+									},
+									tablet: {
+										changePoint: 768,
+										visibleItems: 3
+									}
+								}
+							});
+
+						});
+					</script>
+					<script>
+						$(window).load(function () {
+							$("#flexiselDemo2").flexisel({
+								visibleItems: 3,
+								animationSpeed: 1000,
+								autoPlay: true,
+								autoPlaySpeed: 3000,
+								pauseOnHover: true,
+								enableResponsiveBreakpoints: true,
+								responsiveBreakpoints: {
+									portrait: {
+										changePoint: 480,
+										visibleItems: 1
+									},
+									landscape: {
+										changePoint: 640,
+										visibleItems: 2
+									},
+									tablet: {
+										changePoint: 768,
+										visibleItems: 3
+									}
+								}
+							});
+
+						});
+					</script>
+					<script src="js/jquery.flexisel.js"></script>
+					<!-- //password-script -->
+					<!--/ start-smoth-scrolling -->
+					<script src="js/move-top.js"></script>
+					<script src="js/easing.js"></script>
+					<script>
+						jQuery(document).ready(function ($) {
+							$(".scroll").click(function (event) {
+								event.preventDefault();
+								$('html,body').animate({
+									scrollTop: $(this.hash).offset().top
+								}, 900);
+							});
+						});
+					</script>
+					<!--// end-smoth-scrolling -->
+
+					<script>
+						$(document).ready(function () {
+							
+							var defaults = {
+							  			containerID: 'toTop', // fading element id
+										containerHoverID: 'toTopHover', // fading element hover id
+										scrollSpeed: 1200,
+										easingType: 'linear' 
+									};
+									
+
+									$().UItoTop({
+										easingType: 'easeOutQuart'
+									});
+
+								});
+							</script>
+							<a href="#home" class="scroll" id="toTop" style="display: block;">
+								<span id="toTopHover" style="opacity: 1;"> </span>
+							</a>
+
+							<!-- //Custom-JavaScript-File-Links -->
+							<script src="js/bootstrap.js"></script>
+
+
+						</body>
+					
+
+						<script>
+						// Check browser support
+						if (typeof(Storage) !== "undefined" ) {
+						  // Store
+						
+						  if( localStorage.getItem("StorgeUname") !== null ){
+						
+						  // Retrieve
+						  document.getElementById("result").innerHTML = localStorage.getItem("StorgeUname");
+						  document.getElementById("myDIV1").style.display = "none"
+						  document.getElementById("myDIV2").style.display = "none"
+						  document.getElementById("myDIV3").style.display = "block"
+
+						} else {
+						  document.getElementById("myDIV1").style.display = "block"
+						  document.getElementById("myDIV2").style.display = "block"
+						  document.getElementById("myDIV3").style.display = "none"
+
+						  }
+						} else {
+						  document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+						}
+						</script>
+
+<script>
+
+function delLocalStorage() {
+	localStorage.removeItem("StorgeUname");
+	document.getElementById("myDIV1").style.display = "block"
+	document.getElementById("myDIV2").style.display = "block"
+	document.getElementById("myDIV3").style.display = "none"
+	
+}
+
+</script>
+
+
+						</html>
